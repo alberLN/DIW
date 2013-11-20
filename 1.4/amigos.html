@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Un mundo mejor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ejercicio final uf1 Desarrollo de Interfaces Web">
+  <meta name="author" content="Alberto Lahuerta Navarro">
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="img/favicon.png">
+  
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	
+	<!-- css -->
+	<link rel="stylesheet" href="css/general.css">
+	<link rel="stylesheet" href="css/usuario.css">
+</head>
+
+<body>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column" >
+			<!--Header-->
+			<div class="row clearfix header">
+				<div class="col-md-1 column">
+					<img alt="140x140" class="visible-md visible-lg" src="img/logoMonMillor.png">
+				</div>
+				<div class="col-md-11 column">
+					<h1 class="tituloHeader">Un mundo mejor</h1>
+				</div>
+			</div>
+			<!--cuerpo-->
+			<div class="row clearfix cuerpo">
+				<div class="col-md-2 column"></div>
+				<div class="col-md-8 column">
+					<!-- navegador pestañas-->
+					<div class="row clearfix">
+						<div class="col-md-12 column">
+							<ul class="nav nav-tabs">
+							  <li><a href="index.html">Inicio</a></li>
+							  <li><a href="usuario.html">Perfil</a></li>
+							  <li class="active"><a href="amigos.html">Amigos</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- panel usuario -->
+					<br>
+					<div class="row clearfix">
+						<div class="col-md-6 column"><!-- Columna izquierda Usuario -->
+							<div class="row clearfix">
+								<div class="col-md-12 column">
+									<img id="imgPerfil" alt="140x140" src="img/Patricio.jpg">
+									<img id="imgGrado" alt="140x140" src="img/BUDA.png">
+									<div id="divDatos">
+										<div class="label label-success">Rango: Buda</div>
+										<div class="label label-success">Nivel : 12</div>
+									</div>
+									
+								</div>
+							</div>
+							<br>
+							<div class="row clearfix">
+								<div class="col-md-12 column">
+									<div class="label label-success">Siguiente nivel:</div>
+									<br><br>
+									<div class="progress progress-striped active">
+										<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+										</div>
+									</div>
+								</div>
+							</div>
+							<span><h3 id="tituloTrofeo">Trofeos</h3></span>
+							<div class="row clearfix" id="contenedorLogros">
+								<div class="col-md-12 column" > <!-- pantalla de logros -->
+									<div class="logro">
+										<img alt="140x140" class="img-circle" src="img/logros/l1.png"><br>
+										<span class="label label-primary">Virgencita de la caridad</span>
+									</div>
+									<div class="logro">
+										<img alt="140x140" class="img-circle" src="img/logros/l2.png"><br>
+										<span class="label label-primary">Buenazo</span>
+									</div>
+									<div class="logro">
+										<img alt="140x140" class="img-circle" src="img/logros/l3.png"><br>
+										<span class="label label-primary">Mas bueno que el pan</span>
+									</div>
+									<div class="logro">
+										<img alt="140x140" class="img-circle" src="img/logros/l1.png"><br>
+										<span class="label label-primary">Virgencita de la caridad</span>
+									</div>
+									<div class="logro">
+										<img alt="140x140" class="img-circle" src="img/logros/l2.png"><br>
+										<span class="label label-primary">Buenazo</span>
+									</div>
+									<div class="logro">
+										<img alt="140x140" class="img-circle" src="img/logros/l3.png"><br>
+										<span class="label label-primary">Mas bueno que el pan</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-1 column"></div>
+						<div class="col-md-5 column">
+							<div class="row clearfix">
+								<div class="col-md-12 column">
+									<div><!-- para poner los comentarios -->
+										<textarea id="zonaTexto"></textarea>
+										<input type="button" class="btn boton" data-toggle="modal" data-target="#myModal" value="Nueva AcciÃ³n"></input>
+										<input type="button" class="btn boton" value="Aceptar"></input>
+									</div> 
+									<div id="historial"><!-- historial -->
+										<div class="registro">
+											<div>
+												<img alt="140x140" class="img-circle registroImg" src="img/abu1.png"><br>
+											</div>
+											<div class="comentario">
+												Ayudar a una mujer mayor a pasar la calle.
+											</div>
+										</div>
+										<div class="registro">
+											<div>
+												<img alt="140x140" class="img-circle registroImg" src="img/lentejas2.png"><br>
+											</div>
+											<div class="comentario">
+												Me he comido todas las lentejas de la mama :D.
+											</div>
+										</div>
+										<div class="registro">
+											<div>
+												<img alt="140x140" class="img-circle registroImg" src="img/mentir.jpg"><br>
+											</div>
+											<div class="comentario">
+												Hoy no he mentido.
+											</div>
+										</div>
+										<div class="registro">
+											<div>
+												<img alt="140x140" class="img-circle registroImg" src="img/perro3.jpg"><br>
+											</div>
+											<div class="comentario">
+												He dado de comer a Anacleto el perro de la vecina de la amiga de mi madre que vive en el bloque de mi vecina.
+											</div>
+										</div>
+									</div> 
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2 column"></div>
+			</div>
+			<div class="row clearfix visible-md visible-lg ">
+				<div class="col-md-12 column footer">
+					Alberto Lahuerta Navarro - Un Mundo Mejor S.A. - Centre d'Estudis Politecnics - DAW2A &#169;
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Acciones</h4>
+      </div>
+      <div class="modal-body">
+        <ul id="opciones">
+			<li>
+				<input type="checkbox" name="option1" value="">
+				<img alt="140x140" class="img-circle registroImg" src="img/abu1.png">
+			</li>
+			<li>
+				<input type="checkbox" name="option1" value="">
+				<img alt="140x140" class="img-circle registroImg" src="img/lentejas2.png">
+			</li>
+			<li>
+				<input type="checkbox" name="option1" value="">
+				<img alt="140x140" class="img-circle registroImg" src="img/mentir.jpg">
+			</li>
+			<li>
+				<input type="checkbox" name="option1" value="">
+				<img alt="140x140" class="img-circle registroImg" src="img/perro3.jpg">
+			</li>
+		</ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn boton" data-dismiss="modal">Aceptar</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+</body>
+</html>

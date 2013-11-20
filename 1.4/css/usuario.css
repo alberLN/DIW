@@ -1,0 +1,104 @@
+/*Columa Derecha*/
+#contenedorLogros
+{
+	overflow: auto;
+	padding: 1%;
+	margin-bottom: 5%;
+	height: 125px;
+}
+
+#imgPerfil
+{
+	width: 100px;
+	height: 100px;
+}
+
+#imgGrado
+{
+	width: 100px;
+	height: 100px;
+}
+
+#zonaComentario
+{
+	width: 100%;
+}
+
+#divDatos
+{
+	padding-top: 1%;
+}
+
+#contenedorLogros
+{
+	text-align: center;
+}
+
+.logro
+{
+	display: inline-block;
+	text-align: center;
+	padding: 1%;
+	min-width: 30%;
+	max-width: 30%;
+}
+
+/*Columna izquierda*/
+
+#zonaTexto
+{
+	width: 100%;
+	max-width: 100%;
+	height: 30%;
+	margin-bottom: 1%;
+}
+
+#historial
+{
+	overflow: auto;
+	width: 100%;
+	height: 350px;
+	padding: 3%;
+}
+
+.comentario{
+	width: 100%;
+}
+
+.registro
+{
+	clear: both;
+	width: 100%;
+	margin-bottom: 1%;
+	padding: 1%;
+}
+
+.registroImg
+{
+	float: left;
+	width: 80px;
+	height: 80px;
+	border: 1px solid #428bca;
+}
+
+#menuOpciones
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.opcionLi
+{
+	height: 40%;
+	min-height: 60px;
+	padding: 5%;
+	margin: 0;
+}
+
+
+.opcionLi  img
+{
+	width: 50px;
+	height: 50px;
+}

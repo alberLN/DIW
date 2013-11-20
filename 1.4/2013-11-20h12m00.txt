@@ -1,0 +1,29 @@
+/*Nota ha habido vastantes problemas ocn la sincronización de bootsrap se ha optado por quitar y reinstalar, otra vez
+Al fina la solución a sido actualizar*/
+
+<------------2013-11-14----------------->
+Se ha creado la estructura de la web con 
+Se ha definido un css general para la web en si
+Se ha definido un css para index
+
+<------------2013-12-16----------------->
+Se crea el responsive de index
+Se habla con el antonio respecto el tema del footer
+Solucionado el footer a partir de un fondo verde
+
+<------------2013-11-17----------------->
+Se ha ceado un html nuevo a partir de la web principal
+Se ha modificado el cuerpo para contener el apartado de perfil
+Creado los css para ésta página
+
+<------------2013-11-18----------------->
+Añadido el modal
+Acabado el tema para las foros se decanta por contornos redondeados para imitar un poco el estilo de google
+Se utiliza también el azul para no molestar cansar al usuario con el color verde
+
+<------------2013-12-19----------------->
+Se empieza con el responsive
+
+<------------2013-12-20----------------->
+Se acaba con el responsive
+Se empieza por la última pantalla de
