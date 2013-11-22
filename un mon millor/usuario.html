@@ -47,8 +47,8 @@
 						<div class="col-md-12 column">
 							<ul class="nav nav-tabs">
 							  <li><a href="index.html">Inicio</a></li>
-							  <li><a href="usuario.html">Perfil</a></li>
-							  <li class="active"><a href="amigos.html">Amigos</a></li>
+							  <li class="active"><a href="usuario.html">Perfil</a></li>
+							  <li><a href="amigos.html">Amigos</a></li>
 							</ul>
 						</div>
 					</div>
@@ -58,18 +58,28 @@
 						<div class="col-md-6 column"><!-- Columna izquierda Usuario -->
 							<div class="row clearfix">
 								<div class="col-md-12 column">
-									<img id="imgPerfil" alt="140x140" src="img/Patricio.jpg">
-									<img id="imgGrado" alt="140x140" src="img/BUDA.png">
-									<div id="divDatos">
-										<div class="label label-success">Rango: Buda</div>
-										<div class="label label-success">Nivel : 12</div>
+									<div class="row clearfix">
+										<div class="col-md-1 column padingFotos">
+											<img id="imgPerfil" alt="140x140" src="img/user.png">
+										</div>
+										<div class="col-md-2 column">
+											
+										</div>
+										<div class="col-md-1 visible-md visible-lg column padingFotos">
+											<img id="imgGrado" class="img-circle" alt="140x140" src="img/lvl/l1.png">
+										</div>
+										<div class="col-md-2 column">
+											
+										</div>
+										<div id="divDatos" class="col-md-6 padingFotos">
+											<div class="label label-success">Rango: Buda</div>
+										</div>
 									</div>
-									
 								</div>
 							</div>
 							<br>
 							<div class="row clearfix">
-								<div class="col-md-12 column">
+								<div class="col-md-12 column visible-md visible-lg">
 									<div class="label label-success">Siguiente nivel:</div>
 									<br><br>
 									<div class="progress progress-striped active">
@@ -112,45 +122,47 @@
 						<div class="col-md-5 column">
 							<div class="row clearfix">
 								<div class="col-md-12 column">
-									<div><!-- para poner los comentarios -->
-										<textarea id="zonaTexto"></textarea>
-										<input type="button" class="btn boton" data-toggle="modal" data-target="#myModal" value="Nueva Acción"></input>
-										<input type="button" class="btn boton" value="Aceptar"></input>
-									</div> 
-									<div id="historial"><!-- historial -->
-										<div class="registro">
-											<div>
-												<img alt="140x140" class="img-circle registroImg" src="img/abu1.png"><br>
+									<div class="row">
+										<div class="col-md-6 column" id="zonaComentario"><!-- para poner los comentarios -->
+											<textarea id="zonaTexto"></textarea>
+											<input type="button" class="btn boton" data-toggle="modal" data-target="#myModal" value="Nueva Acción"></input>
+											<input type="button" class="btn boton" value="Aceptar"></input>
+										</div> 
+										<div class="col-md-6" id="historial"><!-- historial -->
+											<div class="registro">
+												<div>
+													<img alt="140x140" class="img-circle registroImg" src="img/abu1.png"><br>
+												</div>
+												<div class="comentario">
+													Ayudar a una mujer mayor a pasar la calle.
+												</div>
 											</div>
-											<div class="comentario">
-												Ayudar a una mujer mayor a pasar la calle.
+											<div class="registro">
+												<div>
+													<img alt="140x140" class="img-circle registroImg" src="img/lentejas2.png"><br>
+												</div>
+												<div class="comentario">
+													Me he comido todas las lentejas de la mama :D.
+												</div>
+											</div>
+											<div class="registro">
+												<div>
+													<img alt="140x140" class="img-circle registroImg" src="img/mentir.jpg"><br>
+												</div>
+												<div class="comentario">
+													Hoy no he mentido.
+												</div>
+											</div>
+											<div class="registro">
+												<div>
+													<img alt="140x140" class="img-circle registroImg" src="img/perro3.jpg"><br>
+												</div>
+												<div class="comentario">
+													He dado de comer a Anacleto el perro de la vecina de la amiga de mi madre que vive en el bloque de mi vecina.
+												</div>
 											</div>
 										</div>
-										<div class="registro">
-											<div>
-												<img alt="140x140" class="img-circle registroImg" src="img/lentejas2.png"><br>
-											</div>
-											<div class="comentario">
-												Me he comido todas las lentejas de la mama :D.
-											</div>
-										</div>
-										<div class="registro">
-											<div>
-												<img alt="140x140" class="img-circle registroImg" src="img/mentir.jpg"><br>
-											</div>
-											<div class="comentario">
-												Hoy no he mentido.
-											</div>
-										</div>
-										<div class="registro">
-											<div>
-												<img alt="140x140" class="img-circle registroImg" src="img/perro3.jpg"><br>
-											</div>
-											<div class="comentario">
-												He dado de comer a Anacleto el perro de la vecina de la amiga de mi madre que vive en el bloque de mi vecina.
-											</div>
-										</div>
-									</div> 
+									</div>
 								</div>
 							</div>
 						</div>
@@ -175,22 +187,26 @@
         <h4 class="modal-title" id="myModalLabel">Acciones</h4>
       </div>
       <div class="modal-body">
-        <ul id="opciones">
-			<li>
-				<input type="checkbox" name="option1" value="">
+        <ul id="menuOpciones">
+			<li class="opcionLi">
+				<input type="checkbox" name="option" value="">
 				<img alt="140x140" class="img-circle registroImg" src="img/abu1.png">
+				<div class="label label-success">Acciones relacionadas con ancianos</div>
 			</li>
-			<li>
-				<input type="checkbox" name="option1" value="">
+			<li class="opcionLi">
+				<input type="checkbox" name="option" value="">
 				<img alt="140x140" class="img-circle registroImg" src="img/lentejas2.png">
+				<div class="label label-success">Acciones relacionadas con comida</div>
 			</li>
-			<li>
-				<input type="checkbox" name="option1" value="">
+			<li class="opcionLi">
+				<input type="checkbox" name="option" value="">
 				<img alt="140x140" class="img-circle registroImg" src="img/mentir.jpg">
-			</li>
-			<li>
-				<input type="checkbox" name="option1" value="">
+				<div class="label label-success">Acciones relacionadas con actitudes</div>
+			</li >
+			<li class="opcionLi">
+				<input type="checkbox" name="option" value="">
 				<img alt="140x140" class="img-circle registroImg" src="img/perro3.jpg">
+				<div class="label label-success">Acciones relacionadas con mascotas</div>
 			</li>
 		</ul>
       </div>

@@ -1,0 +1,3 @@
+Se ha cambiado el fabicon
+Se ha solucionado el problema del botón de la página amigos que aparecia de forma incorrecta
+Se ha añadido separadores en la página de amigos para facilitar la identificación de amigos
