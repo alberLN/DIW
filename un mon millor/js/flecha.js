@@ -15,5 +15,3 @@ function up()
 {
 	$('html, body').animate({scrollTop:0}, 'slow');
 }
-
-//Falta poner fabicon y separador
